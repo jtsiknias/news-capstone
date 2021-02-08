@@ -21,7 +21,7 @@ async function fetchArticles() {
     };
 
     const articles = await Axios({ method, url, params, headers });
-    return articles;
+    return articles.data.value;
 }
 
 export default fetchArticles;

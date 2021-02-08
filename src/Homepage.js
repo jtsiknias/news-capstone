@@ -3,7 +3,14 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 const Homepage = () => {
-    console.log(fetchArticles());
+    async function getArticles() {
+        const results = await fetchArticles();
+        console.log(results);
+        return results;
+    }
+
+    getArticles();
+
     return (
         <div className='App'>
             <header className='App-header'>
