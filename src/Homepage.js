@@ -29,7 +29,8 @@ function Homepage() {
         };
         const fetchData = async () => {
             const result = await Axios({ method, url, params, headers });
-            setData(result);
+            console.log(result.data.value);
+            setData(result.data.value);
         };
         fetchData();
     }, []);
@@ -38,7 +39,7 @@ function Homepage() {
             <header className='App-header'>
                 <Container className='d-flex flex-column'>
                     <Button className='mb-3'>Home</Button>
-                    <ul>{data.data.value.map((article) => ({ article }))}</ul>
+                    <ul>{data.hits.map((article) => ({ article }))}</ul>
                 </Container>
             </header>
         </div>
