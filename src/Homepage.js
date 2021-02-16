@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 function Homepage() {
@@ -38,7 +37,6 @@ function Homepage() {
         <div className='App'>
             <header className='App-header'>
                 <Container className='d-flex flex-column'>
-                    <Button className='mb-3'>Home</Button>
                     {data.length > 0 &&
                         data.map((article) => (
                             <li key={article.id}>{article.title}</li>
