@@ -13,7 +13,7 @@ function Homepage() {
         const params = {
             q: 'united states news',
             pageNumber: '1',
-            pageSize: '10',
+            pageSize: '25',
             autoCorrect: 'true',
             withThumbnails: 'true',
             fromPublishedDate: 'null',
