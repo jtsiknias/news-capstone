@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 function Homepage() {
-    const [data, setData] = useState({ hits: [] });
+    const [data, setData] = useState({});
 
     useEffect(() => {
         const method = 'GET';
@@ -29,8 +29,8 @@ function Homepage() {
         };
         const fetchData = async () => {
             const result = await Axios({ method, url, params, headers });
-            console.log(result.data.value);
-            setData(result.data.value);
+            const rep = result.data.value;
+            setData(rep);
         };
         fetchData();
     }, []);
@@ -39,7 +39,10 @@ function Homepage() {
             <header className='App-header'>
                 <Container className='d-flex flex-column'>
                     <Button className='mb-3'>Home</Button>
-                    <ul>{data.hits.map((article) => ({ article }))}</ul>
+                    {data.length > 0 &&
+                        data.map((article) => (
+                            <li key={article.id}>{article.title}</li>
+                        ))}
                 </Container>
             </header>
         </div>
