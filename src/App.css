@@ -1,3 +1,9 @@
+.websiteTitle {
+    margin-top: 16px;
+    text-align: center;
+    color: #dd0128;
+}
+
 .App {
     text-align: center;
 }
