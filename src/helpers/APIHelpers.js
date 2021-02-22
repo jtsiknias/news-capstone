@@ -1,4 +1,5 @@
 import Axios from 'axios';
+import { trackPromise } from 'react-promise-tracker';
 
 const headers = {
     'Content-Type': 'application/json',
@@ -7,12 +8,14 @@ const headers = {
 };
 
 const getAPI = (url, params, onSuccess, onError) => {
-    Axios({
-        method: 'GET',
-        url,
-        params,
-        headers,
-    })
+    trackPromise(
+        Axios({
+            method: 'GET',
+            url,
+            params,
+            headers,
+        })
+    )
         .then((response) => {
             onSuccess(response.data);
         })
