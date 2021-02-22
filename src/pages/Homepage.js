@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
-import Article from '../components/Article';
+import ArticleList from '../components/ArticleList';
 import getAPI from '../helpers/APIHelpers';
 
 function Homepage() {
@@ -18,6 +18,7 @@ function Homepage() {
         };
 
         const onSuccess = (data) => {
+            console.log(data.value);
             setNewsData(data.value);
         };
 
@@ -35,10 +36,9 @@ function Homepage() {
     }, []);
     return (
         <Container className='articlesContainer'>
-            {newsData.length > 0 &&
-                newsData.map((article) => {
-                    return <Article key={article.id} details={article} />;
-                })}
+            <ul className='list-group list-group-flush'>
+                {newsData.length > 0 && <ArticleList details={newsData} />}
+            </ul>
         </Container>
     );
 }
