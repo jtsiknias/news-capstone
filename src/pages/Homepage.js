@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import MainArticle from '../components/MainArticle';
 import ArticleList from '../components/ArticleList';
 import getAPI from '../helpers/APIHelpers';
 
@@ -35,10 +38,23 @@ function Homepage() {
         );
     }, []);
     return (
-        <Container className='articlesContainer'>
-            <ul className='list-group list-group-flush'>
-                {newsData.length > 0 && <ArticleList details={newsData} />}
-            </ul>
+        <Container>
+            <Row>
+                <Col>
+                    <ul className='list-group list-group-flush'>
+                        {newsData.length > 0 && (
+                            <ArticleList details={newsData} />
+                        )}
+                    </ul>
+                </Col>
+                <Col>
+                    <div>
+                        {newsData.length > 0 && (
+                            <MainArticle details={newsData} />
+                        )}
+                    </div>
+                </Col>
+            </Row>
         </Container>
     );
 }

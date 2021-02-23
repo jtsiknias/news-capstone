@@ -1,10 +1,10 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 const MainArticle = ({ details }) => {
-    return details.map((article) => {
-        return <li className='list-group-item'>{article.title}</li>;
-    });
+    const main = details[0];
+    console.log(main);
+    return <h1>{main.title}</h1>;
 };
 
 export default MainArticle;
