@@ -1,13 +1,16 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import ListGroup from 'react-bootstrap/ListGroup';
+import '../styles/ArticleList.css';
 
 const Article = ({ details }) => {
     const list = details.slice(1, 12);
     return list.map((article) => {
         return (
-            <li key={article.id} className='list-group-item'>
-                {article.title}
-            </li>
+            <ListGroup.Item key={article.id} className='ArticleList__item'>
+                <a href={article.url} target='_blank' rel='noreferrer'>
+                    {article.title}
+                </a>
+            </ListGroup.Item>
         );
     });
 };

@@ -1,0 +1,15 @@
+.MainArticle__title a {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.MainArticle__title a:hover {
+    color: #008ae0;
+    text-decoration: none;
+}
+
+.MainArticle__description {
+    color: #777;
+}

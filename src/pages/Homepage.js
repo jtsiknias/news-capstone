@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
 import MainArticle from '../components/MainArticle';
+import FeaturedArticle from '../components/FeaturedArticle';
 import ArticleList from '../components/ArticleList';
 import getAPI from '../helpers/APIHelpers';
 
@@ -38,21 +40,24 @@ function Homepage() {
         );
     }, []);
     return (
-        <Container>
+        <Container fluid className='my-5'>
             <Row>
-                <Col>
-                    <ul className='list-group list-group-flush'>
+                <Col xs={12} md={3} className='px-4'>
+                    <ListGroup variant='flush'>
                         {newsData.length > 0 && (
                             <ArticleList details={newsData} />
                         )}
-                    </ul>
+                    </ListGroup>
                 </Col>
-                <Col>
-                    <div>
+                <Col xs={12} md={6} className='border-left border-right px-4'>
+                    {newsData.length > 0 && <MainArticle details={newsData} />}
+                </Col>
+                <Col xs={12} md={3} className='px-4'>
+                    <ListGroup variant='flush'>
                         {newsData.length > 0 && (
-                            <MainArticle details={newsData} />
+                            <FeaturedArticle details={newsData} />
                         )}
-                    </div>
+                    </ListGroup>
                 </Col>
             </Row>
         </Container>

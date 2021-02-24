@@ -1,0 +1,10 @@
+.ArticleList__item a {
+    color: #000;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.ArticleList__item a:hover {
+    color: #008ae0;
+    text-decoration: none;
+}
