@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import MainArticle from '../components/MainArticle';
-import FeaturedArticle from '../components/FeaturedArticle';
+import SidePanel from '../components/SidePanel';
 import ArticleList from '../components/ArticleList';
 import getAPI from '../helpers/APIHelpers';
 
@@ -42,20 +42,20 @@ function Homepage() {
     return (
         <Container fluid className='my-5'>
             <Row>
-                <Col xs={12} md={3} className='px-4'>
+                <Col xs={12} lg={3} className='px-4'>
                     <ListGroup variant='flush'>
                         {newsData.length > 0 && (
                             <ArticleList details={newsData} />
                         )}
                     </ListGroup>
                 </Col>
-                <Col xs={12} md={6} className='border-left border-right px-4'>
+                <Col xs={12} lg={6} className='border-left border-right px-4'>
                     {newsData.length > 0 && <MainArticle details={newsData} />}
                 </Col>
-                <Col xs={12} md={3} className='px-4'>
+                <Col xs={12} lg={3} className='px-4'>
                     <ListGroup variant='flush'>
                         {newsData.length > 0 && (
-                            <FeaturedArticle details={newsData} />
+                            <SidePanel details={newsData} />
                         )}
                     </ListGroup>
                 </Col>

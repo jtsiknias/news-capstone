@@ -2,7 +2,7 @@ import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import '../styles/ArticleList.css';
 
-const Article = ({ details }) => {
+const ArticleList = ({ details }) => {
     const list = details.slice(1, 12);
     return list.map((article) => {
         return (
@@ -15,4 +15,4 @@ const Article = ({ details }) => {
     });
 };
 
-export default Article;
+export default ArticleList;
