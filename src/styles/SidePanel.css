@@ -1,24 +1,26 @@
 .SidePanel__title a {
-    font-size: 1.75rem;
-    font-weight: 700;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
 .SidePanel__title a,
 .SidePanel__item a {
-    color: #000;
-    transition: all 0.3s ease;
+  color: #000;
+  transition: all 0.3s ease;
 }
 
 .SidePanel__item a {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .SidePanel__title a:hover,
 .SidePanel__item a:hover {
-    color: #008ae0;
-    text-decoration: none;
+  color: #008ae0;
+  text-decoration: none;
 }
 
 .SidePanel__description {
-    line-height: 1.3rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 1.3rem;
 }
