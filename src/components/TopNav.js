@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const topics = [
   'World',
@@ -18,13 +18,32 @@ const topics = [
 
 const TopNav = () => {
   return (
-    <ul className='nav justify-content-between'>
-      {topics.map((topic) => (
-        <li key={topic}>
-          <Link to={`/search/${topic}`}>{topic}</Link>
-        </li>
-      ))}
-    </ul>
+    <nav className='navbar navbar-expand-lg navbar-light'>
+      <button
+        class='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarTogglerDemo01'
+        aria-controls='navbarTogglerDemo01'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+      >
+        <span class='navbar-toggler-icon'></span>
+      </button>
+
+      <ul
+        className='navbar-nav collapse navbar-collapse justify-content-lg-around'
+        id='navbarTogglerDemo01'
+      >
+        {topics.map((topic) => (
+          <li className='nav-item' key={topic}>
+            <NavLink className='nav-link' to={`/search/${topic}`}>
+              {topic}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

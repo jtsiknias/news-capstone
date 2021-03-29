@@ -11,3 +11,7 @@ h1 {
 .Header__title a:hover {
   text-decoration: none;
 }
+
+.navbar-collapse {
+  align-items: start;
+}
