@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
 }
+.Header__title a,
 h1 {
   font-size: 5rem;
   color: #dc0228;
+}
+
+.Header__title a:hover {
+  text-decoration: none;
 }
