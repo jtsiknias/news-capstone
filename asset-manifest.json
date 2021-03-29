@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/news-capstone/static/css/main.4a3e8346.chunk.css",
+    "main.js": "/news-capstone/static/js/main.067d6252.chunk.js",
+    "main.js.map": "/news-capstone/static/js/main.067d6252.chunk.js.map",
+    "runtime-main.js": "/news-capstone/static/js/runtime-main.73ecdcbb.js",
+    "runtime-main.js.map": "/news-capstone/static/js/runtime-main.73ecdcbb.js.map",
+    "static/css/2.05a5ddcf.chunk.css": "/news-capstone/static/css/2.05a5ddcf.chunk.css",
+    "static/js/2.6fa6d42c.chunk.js": "/news-capstone/static/js/2.6fa6d42c.chunk.js",
+    "static/js/2.6fa6d42c.chunk.js.map": "/news-capstone/static/js/2.6fa6d42c.chunk.js.map",
+    "static/js/3.ac5ee889.chunk.js": "/news-capstone/static/js/3.ac5ee889.chunk.js",
+    "static/js/3.ac5ee889.chunk.js.map": "/news-capstone/static/js/3.ac5ee889.chunk.js.map",
+    "index.html": "/news-capstone/index.html",
+    "static/css/2.05a5ddcf.chunk.css.map": "/news-capstone/static/css/2.05a5ddcf.chunk.css.map",
+    "static/css/main.4a3e8346.chunk.css.map": "/news-capstone/static/css/main.4a3e8346.chunk.css.map",
+    "static/js/2.6fa6d42c.chunk.js.LICENSE.txt": "/news-capstone/static/js/2.6fa6d42c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73ecdcbb.js",
+    "static/css/2.05a5ddcf.chunk.css",
+    "static/js/2.6fa6d42c.chunk.js",
+    "static/css/main.4a3e8346.chunk.css",
+    "static/js/main.067d6252.chunk.js"
+  ]
+}
