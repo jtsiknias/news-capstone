@@ -1,5 +1,4 @@
 import { BrowserRouter, Route } from 'react-router-dom';
-import Search from './Search';
 import SearchLandingPage from '../pages/SearchLandingPage';
 import Homepage from '../pages/Homepage';
 import TopNav from './TopNav';
