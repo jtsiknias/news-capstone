@@ -23,3 +23,13 @@ To run the tests, first ensure you've installed all packages:
 From the root directory, run `npm i`.
 
 Then, run the tests by using `npm test`.
+
+## Additional Info
+
+The standard flow for a user would be:
+
+They are presented with a loading icon briefly, while the news articles load on the homepage.
+
+A user can click on a desired article, or navigate to specific topics by clicking the links in the top nav.
+
+Technology stack used: React for the front end, Bootstrap CSS, Node & Axios for the API.
