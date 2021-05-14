@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container Header flex-column"
+  >
+    <h1
+      class="Header__title text-center"
+    >
+      <a
+        href="/"
+      >
+        POLITICO
+      </a>
+    </h1>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+    >
+      <button
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="navbar-toggler"
+        data-target="#navbarTogglerDemo01"
+        data-toggle="collapse"
+        type="button"
+      >
+        <span
+          class="navbar-toggler-icon"
+        />
+      </button>
+      <ul
+        class="navbar-nav collapse navbar-collapse justify-content-lg-around"
+        id="navbarTogglerDemo01"
+      >
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/World"
+          >
+            World
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/U.S."
+          >
+            U.S.
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Politics"
+          >
+            Politics
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Business"
+          >
+            Business
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Tech"
+          >
+            Tech
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Science"
+          >
+            Science
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Health"
+          >
+            Health
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Sports"
+          >
+            Sports
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Arts"
+          >
+            Arts
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Food"
+          >
+            Food
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Travel"
+          >
+            Travel
+          </a>
+        </li>
+        <li
+          class="nav-item"
+        >
+          <a
+            class="nav-link"
+            href="/search/Real Estate"
+          >
+            Real Estate
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="my-5 container-fluid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-4 col-lg-3 col-12"
+        >
+          <div
+            class="list-group list-group-flush"
+          />
+        </div>
+        <div
+          class="border-left border-right px-4 col-lg-6 col-12"
+        />
+        <div
+          class="px-4 col-lg-3 col-12"
+        >
+          <div
+            class="list-group list-group-flush"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
